@@ -1,0 +1,91 @@
+/* Custom styles for CAP Automation Flow */
+.node {
+    position: absolute;
+    min-width: 180px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 12px;
+    cursor: move;
+    z-index: 10;
+}
+
+.node-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.node-icon {
+    margin-right: 8px;
+    color: #2B51E2;
+}
+
+.node-title {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.node-body {
+    font-size: 13px;
+    color: #666;
+}
+
+.node-connector {
+    width: 12px;
+    height: 12px;
+    background: #2B51E2;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.node-connector.input {
+    left: -6px;
+    top: 50%;
+}
+
+.node-connector.output {
+    right: -6px;
+    top: 50%;
+}
+
+.connection-path {
+    stroke: #2B51E2;
+    stroke-width: 2;
+    fill: none;
+    pointer-events: none;
+}
+
+.tech-flow-diagram {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 24px;
+    border: 1px solid #e2e8f0;
+}
+
+.tech-flow-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.tech-flow-icon {
+    width: 32px;
+    height: 32px;
+    background: #2B51E2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.tech-flow-text {
+    font-size: 14px;
+}
